@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ffxiv-gear-tracker-cli"
+version = "0.1.0"
+description = "Local-first Python CLI for FFXIV players to log gear upgrades, item level, materia, and sources."
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Asdale Dynamics, LLC"}]
+
+[project.scripts]
+ffxiv-gear = "gear_tracker.cli:main"
+
+[tool.setuptools]
+packages = ["gear_tracker"]
